@@ -11,12 +11,6 @@ public class InfoLogger extends RequestHandler{
         }
     }
 
-
-
-
-
-
-
 //    public void log(String message) {
 //        System.out.println("INFO: " + message);
 //    }

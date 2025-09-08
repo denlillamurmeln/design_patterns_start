@@ -11,9 +11,6 @@ public class ErrorLogger extends RequestHandler{
         }
     }
 
-
-
-
 //    public void log(String message) {
 //        System.out.println("ERROR: " + message);
 //    }

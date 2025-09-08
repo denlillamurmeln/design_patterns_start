@@ -9,12 +9,9 @@ public class RequestProcessor {
         RequestHandler debugHandler = new DebugLogger();
         RequestHandler infoHandler = new InfoLogger();
 
-//        RequestHandler logicHandler = new BusinessLogicHandler();
-
         // Set up the chain
         errorHandler.setNext(debugHandler);
         debugHandler.setNext(infoHandler);
-//        infoHandler.setNext(logicHandler);
 
         this.chain = errorHandler; // Start of the chain
     }

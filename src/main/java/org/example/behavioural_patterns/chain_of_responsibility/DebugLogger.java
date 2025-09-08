@@ -13,7 +13,6 @@ public class DebugLogger extends RequestHandler{
     }
 
 
-
 //    public void log(String message) {
 //        System.out.println("DEBUG: " + message);
 //    }
