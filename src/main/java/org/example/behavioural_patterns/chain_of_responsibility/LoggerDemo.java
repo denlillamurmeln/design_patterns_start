@@ -25,41 +25,47 @@ HINTS:
 
     public static void main(String[] args) {
 
-        String message1 = "Detta är ett INFO meddelande";
-        String message2 = "Detta är ett DEBUG meddelande";
-        String message3 = "Detta är ett ERROR meddelande";
+        RequestProcessor processor = new RequestProcessor();
 
-        int INFO = 1;
-        int DEBUG = 2;
-        int ERROR = 3;
+        // Simulating a valid request
+        Request validRequest = new Request(false, true, true);
+        processor.processRequest(validRequest);
 
-        InfoLogger infoLogger = new InfoLogger();
-        DebugLogger debugLogger = new DebugLogger();
-        ErrorLogger errorLogger = new ErrorLogger();
+//        String message1 = "Detta är ett INFO meddelande";
+//        String message2 = "Detta är ett DEBUG meddelande";
+//        String message3 = "Detta är ett ERROR meddelande";
+//
+//        int INFO = 1;
+//        int DEBUG = 2;
+//        int ERROR = 3;
+//
+//        InfoLogger infoLogger = new InfoLogger();
+//        DebugLogger debugLogger = new DebugLogger();
+//        ErrorLogger errorLogger = new ErrorLogger();
 
-        if (INFO == 1) {
-            infoLogger.log(message1);
-        } else if (DEBUG == 1) {
-            debugLogger.log(message1);
-        } else if (ERROR == 1) {
-            errorLogger.log(message1);
-        }
-
-        if (INFO == 2) {
-            infoLogger.log(message2);
-        } else if (DEBUG == 2) {
-            debugLogger.log(message2);
-        } else if (ERROR == 2) {
-            errorLogger.log(message2);
-        }
-
-        if (INFO == 3) {
-            infoLogger.log(message3);
-        } else if (DEBUG == 3) {
-            debugLogger.log(message3);
-        } else if (ERROR == 3) {
-            errorLogger.log(message3);
-        }
+//        if (INFO == 1) {
+//            infoLogger.log(message1);
+//        } else if (DEBUG == 1) {
+//            debugLogger.log(message1);
+//        } else if (ERROR == 1) {
+//            errorLogger.log(message1);
+//        }
+//
+//        if (INFO == 2) {
+//            infoLogger.log(message2);
+//        } else if (DEBUG == 2) {
+//            debugLogger.log(message2);
+//        } else if (ERROR == 2) {
+//            errorLogger.log(message2);
+//        }
+//
+//        if (INFO == 3) {
+//            infoLogger.log(message3);
+//        } else if (DEBUG == 3) {
+//            debugLogger.log(message3);
+//        } else if (ERROR == 3) {
+//            errorLogger.log(message3);
+//        }
 
 
     }
